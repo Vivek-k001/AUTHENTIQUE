@@ -13,6 +13,11 @@ body {
     to { opacity: 1; }
 }
 
+.logo {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 /* Header and Navigation */
 header {
@@ -21,7 +26,7 @@ header {
     align-items: center;
     padding: 20px;
     background-color: #f1c0f0; /* Soft pink */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
     animation: fadeSlideDown 0.8s ease-in-out;
 }
 
