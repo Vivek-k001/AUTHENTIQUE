@@ -1,0 +1,477 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1c0f0;
+    color: #5e2a77;
+    box-sizing: border-box;
+    animation: fadeInBody 1s ease-in;
+}
+
+@keyframes fadeInBody {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f1c0f0; /* Soft pink */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeSlideDown 0.8s ease-in-out;
+}
+
+@keyframes fadeSlideDown {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: #5e2a77;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f1c0f0;
+    text-shadow: 0 0 8px #f1c0f0;
+}
+
+/* Drawer Styles */
+.drawer {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.15);
+    transition: left 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.drawer.open {
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    animation: fadeSlideRight 0.5s ease-in-out;
+}
+
+@keyframes fadeSlideRight {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Drawer Button (Hamburger) */
+.drawer-btn {
+    position: fixed;
+    top: 30px;
+    left: 20px;
+    z-index: 9999;
+}
+
+.drawer-btn button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #5e2a77;
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.drawer-btn button:hover {
+    color: #f1c0f0;
+    text-shadow: 0 0 8px #f1c0f0;
+}
+
+
+
+/* Drawer Content */
+.drawer-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInDrawerContent 0.6s ease-in;
+}
+
+@keyframes fadeInDrawerContent {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Close Button */
+.close-btn {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #5e2a77;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.close-btn:hover {
+    color: #f1c0f0;
+    text-shadow: 0 0 6px #f1c0f0;
+}
+
+
+
+/* Drawer Links */
+.drawer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.drawer-links li a {
+    color: #5e2a77;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.drawer-links li a:hover {
+    color: #f1c0f0;
+    text-shadow: 0 0 8px #f1c0f0;
+}
+
+.drawer.open {
+    box-shadow: 8px 0 30px rgba(225, 169, 212, 0.3);
+}
+
+
+
+
+
+
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1c0f0; /* Soft pink */
+    text-align: center;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #f1c0f0 50%, #ffffffb3 100%);
+
+
+}
+
+.hero-heading {
+    font-size: 4rem;
+    color: #5e2a77; /* Soft purple */
+    font-weight: 600;
+}
+
+.hero-subheading {
+    font-size: 1.5rem;
+    color: #5e2a77;
+    margin-bottom: 20px;
+}
+
+
+
+.btn-main {
+    background-color: #e4a3d0; /* Light pink */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+  box-shadow: 0 0 0 transparent;
+  
+}
+
+.btn-main:hover {
+    background-color: #e4a3d0; /* Keep base color */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 
+                0 0 20px rgba(255, 255, 255, 0.4), 
+                0 0 30px rgba(255, 255, 255, 0.2);
+    transform: scale(1.04);
+}
+
+
+
+
+
+
+/* Products Section */
+.products {
+    padding: 50px 20px;
+   background-color: #ffffffb3;
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    color: #5e2a77;
+    margin-bottom: 20px;
+}
+
+.product-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #eeafed83; /* Soft pink */
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeZoomIn 0.8s ease forwards;
+    
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card-info h3 {
+    color: #5e2a77;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-info p {
+    color: #5e2a77;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.card-info .btn-secondary {
+    background-color: #e4a3d0; /* Soft pink */
+    color: white;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-info .btn-secondary:hover {
+    background-color: #f1c0f0; /* Soft pink */
+}
+
+
+.card.landscape img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .card.landscape {
+    flex-basis: 100%;
+    max-width: 600px; /* or whatever width you want */
+    margin: 2rem auto 0 auto; /* top margin and auto left/right */
+  }
+  
+
+
+
+/* About Us Section */
+
+.about-us {
+    background-color: #fef1f7; /* Light pink */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    color: #5e2a77;
+}
+
+/* Contact Us Section */
+.contact-us {
+    background-color: #fff; /* White background */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-us input, .contact-us textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.contact-us button {
+    background-color: #e4a3d0; /* Soft pink */
+    color: white;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-us button:hover {
+    background-color: #f1c0f0; /* Soft pink */
+}
+
+.contact-us input:focus,
+.contact-us textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(225, 169, 212, 0.5);
+    border-color: #e4a3d0;
+}
+/* Footer */
+footer {
+    background-color:  #f1c0f0; /* Light pink */
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #ffffff 60%, #f1c0f0 100%);
+
+
+}
+
+footer .social-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+footer .social-links li a {
+    color: #5e2a77;
+    text-decoration: none;
+}
+
+footer .social-links li a:hover {
+    color: #f1c0f0; /* Soft pink */
+}
+
+
+
+/* Media Queries for Responsiveness */
+
+
+
+/* On screens smaller than 768px */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 5px;
+    }
+
+    /* Navigation Menu */
+    .nav-menu {
+        display: none; /* Hides the navigation menu on smaller screens */
+    }
+
+    /* Drawer button adjustment */
+    .drawer-btn {
+        top: 20px; /* Adjust the hamburger button slightly */
+        left: 15px;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 70vh; /* Reduce the height of the hero section */
+    }
+
+    .hero-heading {
+        font-size: 2.5rem; /* Decrease font size */
+    }
+
+    .hero-subheading {
+        font-size: 1rem;
+    }
+
+    .btn-main {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+
+    /* Products Section */
+    .product-cards {
+        flex-direction: column; /* Stack products vertically on mobile */
+        gap: 15px;
+    }
+
+    .card {
+        width: 90%; /* Make cards take up more space */
+        margin: 0 auto;
+    }
+
+    /* About Us Section */
+    .about-us p {
+        font-size: 1rem; /* Reduce font size */
+    }
+
+    /* Contact Us Section */
+    .contact-us form {
+        width: 90%;
+    }
+
+    .contact-us input, .contact-us textarea {
+        font-size: 0.9rem;
+    }
+
+}
