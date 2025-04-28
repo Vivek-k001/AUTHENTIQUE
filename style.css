@@ -422,7 +422,7 @@ footer .social-links li a:hover {
 @media (max-width: 768px) {
     /* Header */
     header {
-        padding: 7px;
+        padding: 5px;
     }
 
     /* Navigation Menu */
@@ -479,6 +479,9 @@ footer .social-links li a:hover {
     .contact-us input, .contact-us textarea {
         font-size: 0.9rem;
     }
-
+    
+    .logo {
+        padding-top: 5px;
+    }
    
 }
