@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #ee99ec;
+    background-color: #fef1f7;
     color: #5e2a77;
     box-sizing: border-box;
     animation: fadeInBody 1s ease-in;
@@ -25,7 +25,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #ee99ec; /* Soft pink */
+    background-color: #fef1f7; /* Soft pink */
     /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
     animation: fadeSlideDown 0.8s ease-in-out;
 }
@@ -200,10 +200,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ee99ec; /* Soft pink */
+    background-color: #fef1f7; /* Soft pink */
     text-align: center;
     padding: 20px;
-    background-image: linear-gradient(to bottom, #ee99ec 50%, #ffffffb3 100%);
+    background-image: linear-gradient(to bottom, #fef1f7 50%, #ffffffb3 100%);
 
 
 }
@@ -334,6 +334,7 @@ header {
     background-color: #fef1f7; /* Light pink */
     padding: 40px 20px;
     text-align: center;
+    background-image: linear-gradient(to top, #fef1f7 40%, #ffffffb3 100%);
 }
 
 .about-us p {
@@ -343,7 +344,7 @@ header {
 
 /* Contact Us Section */
 .contact-us {
-    background-color: #fff; /* White background */
+    background-color: #fef1f7; /* White background */
     padding: 40px 20px;
     text-align: center;
 }
@@ -365,7 +366,7 @@ header {
 }
 
 .contact-us button {
-    background-color: #e4a3d0; /* Soft pink */
+    background-color: #fef1f7; /* Soft pink */
     color: white;
     padding: 10px;
     font-size: 1.1rem;
@@ -387,10 +388,10 @@ header {
 }
 /* Footer */
 footer {
-    background-color:  #f1c0f0; /* Light pink */
+    background-color:  #fef1f7; /* Light pink */
     padding: 20px;
     text-align: center;
-    background-image: linear-gradient(to bottom, #ffffff 60%, #f1c0f0 100%);
+    background-image: linear-gradient(to bottom, #fef1f7 40%, #8c3eb08d 100%);
 
 
 }
@@ -408,7 +409,7 @@ footer .social-links li a {
 }
 
 footer .social-links li a:hover {
-    color: #f1c0f0; /* Soft pink */
+    color: #fef1f7; /* Soft pink */
 }
 
 
@@ -479,4 +480,5 @@ footer .social-links li a:hover {
         font-size: 0.9rem;
     }
 
+   
 }
