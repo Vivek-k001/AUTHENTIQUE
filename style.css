@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #fef1f7;
+    background-color: #fae4fc;
     color: #5e2a77;
     box-sizing: border-box;
     animation: fadeInBody 1s ease-in;
@@ -25,7 +25,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #fef1f7; /* Soft pink */
+    background-color: #fae4fc; /* Soft pink */
     /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
     animation: fadeSlideDown 0.8s ease-in-out;
 }
@@ -200,10 +200,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fef1f7; /* Soft pink */
+    background-color: #fae4fc; /* Soft pink */
     text-align: center;
     padding: 20px;
-    background-image: linear-gradient(to bottom, #fef1f7 50%, #ffffffb3 100%);
+    background-image: linear-gradient(to bottom, #fae4fc 50%, #ffffffb3 100%);
 
 
 }
@@ -331,10 +331,10 @@ header {
 /* About Us Section */
 
 .about-us {
-    background-color: #fef1f7; /* Light pink */
+    background-color: #fae4fc; /* Light pink */
     padding: 40px 20px;
     text-align: center;
-    background-image: linear-gradient(to top, #fef1f7 40%, #ffffffb3 100%);
+    background-image: linear-gradient(to top, #fae4fc 40%, #ffffffb3 100%);
 }
 
 .about-us p {
@@ -344,7 +344,7 @@ header {
 
 /* Contact Us Section */
 .contact-us {
-    background-color: #fef1f7; /* White background */
+    background-color: #fae4fc; /* White background */
     padding: 40px 20px;
     text-align: center;
 }
@@ -366,7 +366,7 @@ header {
 }
 
 .contact-us button {
-    background-color: #fef1f7; /* Soft pink */
+    background-color: #fae4fc; /* Soft pink */
     color: white;
     padding: 10px;
     font-size: 1.1rem;
@@ -388,10 +388,10 @@ header {
 }
 /* Footer */
 footer {
-    background-color:  #fef1f7; /* Light pink */
+    background-color:  #fae4fc; /* Light pink */
     padding: 20px;
     text-align: center;
-    background-image: linear-gradient(to bottom, #fef1f7 40%, #8c3eb08d 100%);
+    background-image: linear-gradient(to bottom, #fae4fc 40%, #8c3eb08d 100%);
 
 
 }
@@ -409,7 +409,7 @@ footer .social-links li a {
 }
 
 footer .social-links li a:hover {
-    color: #fef1f7; /* Soft pink */
+    color: #fae4fc; /* Soft pink */
 }
 
 
