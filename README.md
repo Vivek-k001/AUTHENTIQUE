@@ -30,9 +30,9 @@
 ## 📸 Screenshots
 
 <!-- Add your own screenshots in the repo and link here -->
-![Homepage](./screenshots/homepage.png)
-![Product Listing](./screenshots/products.png)
-![Contact Page](./screenshots/contact.png)
+![Homepage](./assets/home.png)
+![Product Listing](./assets/products.png)
+![Contact Page](./assets/contact.png)
 
 ---
 
