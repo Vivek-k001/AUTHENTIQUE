@@ -462,7 +462,8 @@ footer .social-links li a:hover {
     }
 
     .card {
-        width: 90%; /* Make cards take up more space */
+        width: 70%; /* Make cards take up more space */
+        height: auto;
         margin: 0 auto;
     }
 
@@ -478,7 +479,7 @@ footer .social-links li a:hover {
 
     .contact-us input, .contact-us textarea {
         font-size: 0.9rem;
-    }
+    }c
     
     .logo {
         padding-top: 7px;
