@@ -80,7 +80,9 @@ header {
 .drawer.open {
     left: 0;
     background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(6px);
     animation: fadeSlideRight 0.5s ease-in-out;
+    
 }
 
 @keyframes fadeSlideRight {
@@ -168,7 +170,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .drawer-links li a {
@@ -224,25 +226,27 @@ header {
 
 .btn-main {
     background-color: #e4a3d0; /* Light pink */
-  color: white;
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
-  box-shadow: 0 0 0 transparent;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 
+      background-color 0.4s ease-out,
+      box-shadow 0.4s ease-out,
+      transform 0.6s ease-out; /* Slower and smoother */
+    box-shadow: 0 0 0 transparent;
+  }
   
-}
-
-.btn-main:hover {
-    background-color: #e4a3d0; /* Keep base color */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 
-                0 0 20px rgba(255, 255, 255, 0.4), 
-                0 0 30px rgba(255, 255, 255, 0.2);
-    transform: scale(1.04);
-}
-
+  .btn-main:hover {
+    background-color: #e4a3d0;
+    border-radius: 2rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3), 
+                -3px -3px 10px rgb(224, 224, 224);
+    transform: scale(1.08); /* Gentle enlarge */
+  }
+  
 
 
 
