@@ -1,6 +1,6 @@
 # 🌸 Authentique Cosmetic - Product Showcase Website
 
-**Authentique Cosmetic** is a beautifully designed, responsive website built to showcase premium beauty and cosmetic products. With soft feminine colors like pink, purple, and white, the site offers a visually appealing and calming experience. It's ideal for presenting products attractively without any e-commerce or cart functionality.
+**Authentique Cosmetic** is a beautifully designed, responsive website built to showcase premium beauty and cosmetic products. With soft feminine colors like pink, purple, and white, the site offers a visually appealing and calming experience. It's a ideal for presenting products attractively without any e-commerce or cart functionality.
 
 ---
 
